@@ -124,3 +124,7 @@ ky_officers <- ky_officers_public %>% select(person_nbr, full_name, first_name, 
 # Export csv of standard work history index for project
 ky_officers %>% write_csv(ky_index)
 
+
+
+
+
