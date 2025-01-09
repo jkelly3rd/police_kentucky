@@ -114,6 +114,8 @@ ky_officers <- ky_officers %>% mutate(year_of_birth = as.numeric(year_of_birth))
 
 # Now merge the cleaned Kentucky data into the work history index file
 ky_officers_public <- bind_rows(template_public,ky_officers)
+# Sort by person_nbr and start_date
+ky_officers_public <- ky_officers_public %>% arrange(person_nbr, start_date)
 
 # Export csv of work history index for project
 ky_officers_public %>% write_csv(ky_index_enhanced)
