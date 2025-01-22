@@ -5,12 +5,10 @@ library(readxl)
 library(janitor)
 library(peopleparser)
 
-# Clean workspace
+# Clean space
 rm(list = ls())
-
-# Set working and output directories
+# Set directories
 root_dir = getwd()
-
 # Identify paths for raw multi-sheet state Excel file to import
 persons_file = "data/original/Certified_Employed_POPS_-_All_Cert_Statuses_Employment_History_Training_History.xlsx"
 
@@ -125,8 +123,4 @@ ky_officers <- ky_officers_public %>% select(person_nbr, full_name, first_name, 
 
 # Export csv of standard work history index for project
 ky_officers %>% write_csv(ky_index)
-
-
-
-
 

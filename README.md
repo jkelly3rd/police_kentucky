@@ -34,7 +34,7 @@ The script performs several steps to clean and process the data:
 
 ## Output
 
-The script generates three CSV files:
+The script generates four CSV files:
 
 1. `ky-2023-original-persons.csv`: Contains standardized work history records data in csv format with all original data and fields provided by the state
 2. `ky-2023-original-licenses.csv`: Contains standardized licensing data in csv format with all original data and fields provided by the state
